@@ -1,2 +1,5 @@
 # Calculator-TOP
-Theodinproject simple calculator project
+Theodinproject simple  web calculator project
+
+Live Preview:
+https://cherahamza.github.io/Calculator-TOP/

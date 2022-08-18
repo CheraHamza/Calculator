@@ -1,0 +1,73 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame{
+    padding: 20px;
+    width: 350px;
+    height: 550px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: navy;
+}
+
+.screen{
+    display: flex;
+    align-items: center;
+    width: 350px;
+    height: 120px;
+    border: 1px solid green;
+    border-radius: 3px;
+    background-color: white;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.btnContainer{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+button{
+
+    padding: 20px;
+    background-color: lightcyan;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.num0{
+    padding: 20px 104px;
+     margin-right: 20px; 
+}
+
+.clearBtn{
+    padding: 20px 85px;
+    margin-right: 45px;  
+}
+
+.operator, .numbers, .equal{
+    width: 60px;
+    height: 60px;
+}
+
+.result{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.operator, .equal{
+    background-color: darkorange;
+}
