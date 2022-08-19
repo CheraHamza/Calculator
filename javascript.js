@@ -50,14 +50,15 @@ screen.textContent='0';
 // function to populate screen
 function populate()
 {
-    if(screen.textContent==='0' || !resultP.textContent=='')
+    resultP.textContent='';
+    if(screen.textContent==='0'  || resultP.textContent!=='')
     {
         screen.textContent='';
     }
     if((screen.textContent).length<=13)
-    {
-    screen.textContent+=this.textContent; 
-    }
+        {
+            screen.textContent+=this.textContent; 
+        }
 }
 // event listeners for number buttons
 numbers.forEach( (number)=> {
@@ -77,6 +78,7 @@ function clearScreen()
 // function to when you click an operator
 function excuteOperate()
 {
+    
     if(firstOperator===null && screen.textContent!=='' && a=== null)
     {
         a=Number(screen.textContent);
@@ -86,21 +88,17 @@ function excuteOperate()
     else
     {
         secondOperator=this.textContent;
-        resultP.textContent='';
-        if(a!==null && resultP.textContent==='')
-        {
-            b=Number(screen.textContent);
-            resultP.textContent=operate(a,firstOperator,b);
-            a=operate(a,firstOperator,b);
-            b=null;
-            firstOperator=secondOperator;
-            secondOperator=null;
-            clearScreen();
-            screen.appendChild(resultP);
-        }
-        
+        resultP.textContent=''
+        b=Number(screen.textContent);
+        resultP.textContent=operate(a,firstOperator,b);
+        a=operate(a,firstOperator,b);
+        b=null;
+        firstOperator=secondOperator;
+        secondOperator=null;
+        clearScreen();
+        screen.appendChild(resultP);
+}
     
-    }
 }
 
 // event listeners for operator buttons
