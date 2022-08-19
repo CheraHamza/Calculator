@@ -109,7 +109,7 @@ operatorBtns.forEach((operatorBtn)=>{
 // function to calculate the imediate calculation
 function calculate()
 {
-    if (a!==null)
+    if (a!==null && resultP.textContent==='')
     {
         b=Number(screen.textContent);
         if(getlength(operate(a,firstOperator,b))>14)
