@@ -9,7 +9,7 @@ function operate(a,operator,b)
     {
         return(a-b);
     }
-    else if(operator==='*')
+    else if(operator==='x')
     { 
         return(a*b);
     }
