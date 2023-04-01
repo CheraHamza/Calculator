@@ -1,29 +1,32 @@
 //operate function
 function operate(a,operator,b)
 {
-    if(operator==='+')
+    if(operator=='+')
     {
         return(a+b);
     }
-    else if(operator==='-')
+    else if(operator=='-')
     {
         return(a-b);
     }
-    else if(operator==='*')
+    else if(operator=='x')
     { 
         return(a*b);
     }
-    else if (operator==='/' && b===0)
+    else if (operator=='/')
     {
-        return('Error');
+        if(b==0)
+        {
+            return('Error');
+        }
+        if(a%b!=0)
+        {
+            return((Math.round(a/b * 100) / 100).toFixed(2));
+        }
+        return(a/b);
+        
     }
-    else if (a%b!==0 && operator==='/'){
-        return((Math.round(a/b * 100) / 100).toFixed(2));
-    }
-    else
-    {
-        return (a/b);
-    }
+
 }
 // numbers
 const numbers= document.querySelectorAll('.displayed');
