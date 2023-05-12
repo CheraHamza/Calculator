@@ -41,7 +41,7 @@ body {
 }
 
 button{
-
+    cursor: pointer;
     padding: 20px;
     background-color: lightcyan;
     border-radius: 5px;
